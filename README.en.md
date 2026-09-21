@@ -4,7 +4,35 @@
 
 A reusable Codex skill that turns a destination, a text itinerary, or booking screenshots into a practical travel plan and an interactive HTML map.
 
-## Start with what you know
+## Real Demo Screenshots
+
+These cropped screenshots come from an existing Penang map and show public places and UI interactions without personal itinerary details. Ratings are historical verification snapshots, not live data. This demo is Chinese-only: bilingual output is required by the updated skill but has not been implemented or verified in this particular demo.
+
+| Category filtering | Ratings, photos and scrollable details |
+| --- | --- |
+| ![Coffee shop category filter](docs/images/food-filter.png) | ![Restaurant rating and scrollable map popup](docs/images/food-popup.png) |
+
+Food candidates start hidden. Enable the food layer and filter by categories such as cafes, desserts or late-night food. Open a marker for ratings, review counts, verification dates and real photos; scroll within the popup to reach descriptions and navigation. Other attraction layers can remain visible for context.
+
+Basemap © OpenStreetMap contributors; map UI uses Leaflet. Business photos shown in the interface come from Google Maps business pages and belong to their respective owners. This repository includes screenshots, not a personal itinerary HTML or a hosted live demo.
+
+## Capabilities at a Glance
+
+| Stage | Input | Expected output |
+| --- | --- | --- |
+| Start from scratch | A destination, optional duration and interests | Neighborhood overview, attractions, suggested trip lengths and alternative plans |
+| Work around bookings | Text or screenshots; one-way or return flights; partial hotel bookings | Confirmed facts, unknowns, fixed appointments and time-zone constraints |
+| Attractions and photography | Interests, heat tolerance, pace and photo preferences | Nearby combinations, visit durations, photo stops, transport and fallback plans |
+| Choose food | Categories or accessible saved recommendations | Categorized candidates, rating evidence, dishes, priorities and route compatibility |
+| Build a map | Selected plan or explicitly requested draft | Overview, daily and segment views, popups, optional layers and external navigation |
+| Revise | Changed hotels, appointments or attractions | Consistent updates while preserving unaffected decisions |
+| Share | Explicit publishing request | Privacy review, authorized deployment and version/link verification |
+
+Typical deliverables: trip.json (shared data), itinerary.md (readable plan), trip-map.html (interactive map), and an optional food guide. Without routing data, route lines show visit order rather than turn-by-turn directions.
+
+The screenshots demonstrate implemented food filtering, markers, rating/photo display and scrollable popups. Broader planning and bilingual requirements guide future generation and require per-artifact verification. This is not an automatic booking service, a live ratings database or a ready-to-run map SaaS.
+
+## Flexible Inputs
 
 No screenshot, flight booking, hotel or exact date is required. Start with just a destination. The skill suggests trip lengths, explains neighborhoods and attractions, and drafts clearly labeled sample itineraries.
 
