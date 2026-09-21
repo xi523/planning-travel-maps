@@ -1,0 +1,4 @@
+interface:
+  display_name: "旅行攻略与交互地图"
+  short_description: "只有目的地也能起步，支持文字或截图，规划景点美食并制作旅行地图"
+  default_prompt: "使用 $planning-travel-maps 帮我规划旅行，先整理已定安排和偏好、比较路线，等我确认后再制作交互地图。"
