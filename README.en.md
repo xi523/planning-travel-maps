@@ -6,7 +6,33 @@ A reusable Codex skill that turns a destination, a text itinerary, or booking sc
 
 ## Real Demo Screenshots
 
-These cropped screenshots come from an existing Penang map and show public places and UI interactions without personal itinerary details. Ratings are historical verification snapshots, not live data. This demo is Chinese-only: bilingual output is required by the updated skill but has not been implemented or verified in this particular demo.
+These full desktop screenshots show an existing Penang and Phuket itinerary, including date and city switches, attractions, transport and descriptions. The example schedule is not a fixed template for other travelers. Ratings are historical verification snapshots, not live data. This demo is Chinese-only: bilingual output is required by the updated skill but has not been implemented or verified in this particular demo.
+
+### 1. Multi-day overview
+
+Switch dates and cities at the top, scan daily plans on the left, and locate attractions and transport points on the map.
+
+![Multi-day Penang overview](docs/images/trip-overview.png)
+
+### 2. Daily transport and routes
+
+See the day's schedule, walking and taxi estimates, segment navigation and route markers together. Dashed lines indicate visit order, not actual road geometry.
+
+![Daily schedule and transport](docs/images/trip-transport.png)
+
+### 3. Attraction details
+
+Scroll the side panel for highlights, suggested visit durations and practical notes while keeping the day's map visible.
+
+![Attraction descriptions alongside the map](docs/images/trip-attractions.png)
+
+### 4. Another city
+
+Switching to Phuket updates dates, plans and map locations together.
+
+![Phuket city view](docs/images/trip-phuket.png)
+
+### 5. Food details
 
 | Category filtering | Ratings, photos and scrollable details |
 | --- | --- |
